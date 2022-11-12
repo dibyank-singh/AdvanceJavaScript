@@ -12,8 +12,9 @@ console.log( name.indexOf("v") )
 console.log( name.repeat(2) )    
 // => DivyankDivyank
 console.log( name.search("a"))    
+// => 4
+console.log( name.slice() )    
 // => 7
-// console.log( name.length )    => 7
 // console.log( name.length )    => 7
 // console.log( name.length )    => 7
 // console.log( name.length )    => 7
