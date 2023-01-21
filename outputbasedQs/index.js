@@ -97,3 +97,85 @@ const data = [{
     grade: 18
 }]
 console.log(getPassingTests(data))
+
+// Ques- Complete the getReactVersion method such that it returns the current installed version of React.
+import React from "react"
+
+function getReactVersion() {
+return React.version
+}
+
+// sample usage (do not modify)
+console.log(getReactVersion());
+
+// Q 
+let c = { greeting: 'Hey!' };
+let d;
+
+d = c;
+c.greeting = 'Hello';
+console.log(d.greeting);
+
+// Ques
+
+let a = 3;
+let b = new Number(3);
+let c = 3;
+
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+
+// Output, true, false, false.
+
+// Ques
+function getAge(...args) {
+    console.log(typeof args);
+  }
+  
+  getAge(21);
+
+//   output object
+
+// Ques
+let greeting;
+greetign = {}; // Typo!
+console.log(greetign);
+
+// Output {}
+
+// Ques
+function checkAge(data) {
+    if (data === { age: 18 }) {
+      console.log('You are an adult!');
+    } else if (data == { age: 18 }) {
+      console.log('You are still an adult.');
+    } else {
+      console.log(`Hmm.. You don't have an age I guess`);
+    }
+  }
+  
+  checkAge({ age: 18 });
+//   Output Hmm.. You don't have an age I guess
+
+// Ques
+const obj = { 1: 'a', 2: 'b', 3: 'c' };
+const set = new Set([1, 2, 3, 4, 5]);
+
+obj.hasOwnProperty('1');
+obj.hasOwnProperty(1);
+set.has('1');
+set.has(1);       
+// output  true true false true
+
+// ques
+const a = {};
+const b = { key: 'b' };
+const c = { key: 'c' };
+
+a[b] = 123;
+a[c] = 456;
+
+console.log(a[b]);
+
+
